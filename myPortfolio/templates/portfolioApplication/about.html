@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>ABOUT</title>
-  </head>
-  <body>
-    <h1>ABOUT PAGE</h1>
-  </body>
-</html>
+{% extends "portfolioApplication/base.html" %}
+  {% block body_block %}
+    <h1>About.</h1>
+    <p style="font-family: 'EB Garamond', serif; text-align: left;
+    font-size: 25px;">
+      My name is <span class="highlight"> Lois</span>, a Software Engineer from
+      <span class="highlight"> Ottawa</span>, Canada. I graduated
+    from <span class="highlight">Carleton University </span> focusing in Software
+     Engineering.
+    <br><br>
+    Based on my experince, I am fluent in using various languages and frameworks
+    such as <span class="highlight">Java</span>,
+    <span class="highlight"> Python </span>,
+    <span class="highlight"> GraphQl</span>,<span class="highlight"> React</span>,
+    <span class="highlight">Django</span>, <span class="highlight">JavaScript</span> and tools like
+    <span class="highlight">Jenkins</span>.
+    <br><br>
+    I attended a coding bootcamp enabling me to become a
+    <span class="highlight">full stack developer </span> and also introducing me
+    to some of the skills mentioned above like React and JavaScript,
+    as well as <span class="highlight">HTML</span>,
+    <span class="highlight">CSS</span>, <span class="highlight">jQuery</span>,
+    <span class="highlight">Node.Js</span>. I also have experience with
+    <span class="highlight">performance testing</span> exposing me to tools like
+    <span class="highlight">Splunk</span> and <span class="highlight">Blazemeter</span>.
+    <br><br>
+    I am a <span class="highlight"> Machine Learning and
+    Artificial Intelligence Enthusiast </span> . I have a bit of experience
+    working with AI researchers in my undergrad using tools like
+    <span class="highlight"> TensorFlow </span> and I took a course in
+    <span class="highlight"> LangChain </span> for LLM Application Development using Deeplearning.Ai
+  </p>
+  {% endblock %}

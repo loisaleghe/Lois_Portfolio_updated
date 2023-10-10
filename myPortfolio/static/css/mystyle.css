@@ -1,6 +1,17 @@
-.nav-link{
-  color: grey;
+.navbar-nav {
+font-size: 17px;
 }
-.nav{
-  margin-top: 20px;
+
+.hiClass{
+  text-align: left;
+  margin-left: 30px;
+  font-size: 30px;
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.highlight{
+  color: rgb(199, 0, 57);
+  display: inline-block;
 }
