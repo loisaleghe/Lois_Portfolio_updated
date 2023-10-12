@@ -1,17 +1,26 @@
 .navbar-nav {
 font-size: 17px;
 }
-
+h1{
+  margin-top: 20px;
+  text-align: left;
+}
 .hiClass{
   text-align: left;
-  margin-left: 30px;
+  margin-left: 60px;
   font-size: 30px;
   white-space: nowrap;
-  font-family: 'Open Sans', sans-serif;
-
 }
 
 .highlight{
   color: rgb(199, 0, 57);
   display: inline-block;
+}
+.roleNames{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Fira Mono', monospace;
+}
+#role{
+  color: rgb(199, 0, 57);
 }

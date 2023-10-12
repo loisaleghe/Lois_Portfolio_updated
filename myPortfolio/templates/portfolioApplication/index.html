@@ -6,6 +6,21 @@
       Hi, I'm
       <div class="highlight">Lois</div>
     </div>
-    <div style="font-size: 30px; text-align:center;"> I am a </div>
+    <div style="font-size: 30px; text-align:center;margin-top: 10px;"> I am a </div>
+      <div class="roleNames"><span id="role"></span></div>
+    <script>
+   var typed = new Typed('#role', {
+     strings: [
+       "Software Engineer",
+       "Full Stack Developer",
+       "Machine Learning Enthusiast",
+       "Artificial Intelligence Enthusiast"
+     ],
+     typeSpeed: 60,
+     backSpeed: 60,
+     loop: true
+   });
+ </script>
+
 
   {% endblock %}
