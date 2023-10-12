@@ -1,5 +1,82 @@
 <!DOCTYPE html>
 {% extends "portfolioApplication/base.html" %}
+{% load static %}
+{% block head_block %}
+  <link rel="stylesheet" href="{% static "css/work.css" %}">
+{% endblock %}
   {% block body_block %}
-    <h2>Hi, welcome </h2>
+    <h1>Work Experience. </h1>
+
+    <div class="timeline">
+		<ul>
+			<li>
+				<span>06/2022 - 08/2023</span>
+				<div class="content">
+          <h3>Anaplan</h3>
+					<h4>Associate Software Engineer</h4>
+					<p>
+							Successfully developed core modelling <span style="background-color:white" class="highlight">GraphQL API</span>, enhancing application performance and usability.
+              <br><br>
+              Conducted comprehensive <span style="background-color:white"
+              class="highlight">unit tests</span> and <span style="background-color:white" class="highlight">integration tests</span> ensuring seamless release of builds to production
+              <br><br>
+              Managed full process of service release to <span style="background-color:white" class="highlight">production</span>, enhancing system efficiency and performance.
+              <br><br>
+              Analyzed client issues using software like <span style="background-color:white" class="highlight">
+              Splunk</span> ensuring prompt resolution and <span style="background-color:white" class="highlight"> optimum software performance</span>.
+              <br><br>
+            <span style="background-color:white" class="highlight">Collaborated</span> with coworkers and worked on an experiment to connect <span style="background-color:white" class="highlight">ChatGPT</span> to our planning solution to create planning models directly from user stories <span style="background-color:white" class="highlight">natural language</span>.
+					</p>
+				</div>
+			</li>
+			<li>
+				<span>01/2021 - 12/2021</span>
+				<div class="content">
+          <h3>Carleton University</h3>
+					<h4>A.I. Researcher</h4>
+					<p>
+						Executed <span style="background-color:white" class="highlight">object segmentation</span> using deep learning, resulting in improved <span style="background-color:white" class="highlight">AI functionality</span>.
+            <br><br>
+            Analyzed and utilized <span style="background-color:white" class="highlight">Detectron2</span> for data preparation, training, and testing of AI models.
+					</p>
+				</div>
+			</li>
+			<li>
+				<span>01/2021 - 05/2022</span>
+				<div class="content">
+					<h3>Freelance Web Developer</h3>
+					<p>
+						Collaborated with clients to create responsive web applications using <span style="background-color:white" class="highlight">React.js</span>, enhancing user experience and satisfaction.
+					</p>
+				</div>
+			</li>
+			<li>
+				<span>06/2021 - 08/2021</span>
+				<div class="content">
+          <h3>Major League Hacking Fellowship</h3>
+					<h4>Production Engineering Intern</h4>
+					<p>
+						Streamlined portfolio hosting by designing MLH portfolio using
+            <span style="background-color:white" class="highlight">HTML</span>,
+            <span style="background-color:white" class="highlight">CSS</span>,
+            <span style="background-color:white" class="highlight">Python</span>, and
+            <span style="background-color:white" class="highlight">Flask</span>.
+					</p>
+				</div>
+			</li>
+      <li>
+				<span>08/2020 - 09/2020</span>
+				<div class="content">
+          <h3>Smart Build Apps</h3>
+					<h4>Front End Developer</h4>
+					<p>
+						Developed client-centric front-end applications using
+            <span style="background-color:white" class="highlight">Ruby on Rails</span> or
+            <span style="background-color:white" class="highlight">React.js</span>,
+            leading to improved user interface and UX.
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
   {% endblock %}
