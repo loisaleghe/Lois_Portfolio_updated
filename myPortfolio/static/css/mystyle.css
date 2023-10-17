@@ -7,10 +7,12 @@ h1{
 }
 body{
   font-family: 'PT Sans',monospace;
+  overflow-x: hidden;
+  z-index: 1;
 }
 .hiClass{
   text-align: left;
-  margin-left: 60px;
+  margin-left: 30%;
   font-size: 30px;
   white-space: nowrap;
 }
@@ -21,10 +23,60 @@ body{
   padding: 0px 0px !important;
 }
 .roleNames{
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-family: 'Fira Mono', monospace;
 }
 #role{
   color: rgb(199, 0, 57);
 }
+.typed-cursor {
+  color: rgb(199, 0, 57);
+}
+
+.fa-brands{
+  margin-left: 5px;
+}
+section{
+  margin-top: 50px;
+}
+.me{
+  font-size: 35px;
+  text-align: left;
+  margin-left: 5%;
+}
+div img{
+  width: 800px;
+}
+div h2{
+  margin-top: 20px;
+  /* display: block; */
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: rgb(199, 0, 57);
+}
+.button-details{
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-transform: uppercase;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+}
+/* .btn-details{
+  margin: 0;
+  outline:0;
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+} */
+/* img{
+
+} */

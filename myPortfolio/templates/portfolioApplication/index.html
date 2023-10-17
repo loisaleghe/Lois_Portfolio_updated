@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 {% extends "portfolioApplication/base.html" %}
   {% block body_block %}
-    <h1>Who Am I</h1>
+  <section>
+    <div class="me">
+      <h1>Who Am I</h1>
+    </div>
     <div class="hiClass">
       Hi, I'm
       <div class="highlight">Lois</div>
@@ -23,7 +26,14 @@
      backSpeed: 60,
      loop: true
    });
- </script>
-
+   </script>
+  </section>
+ <section style="text-align:center;">
+   <br><br>
+   <h3>Get to know</h3>
+   <br>
+   <a href="https://www.linkedin.com/in/lois-aleghe-2b754b1a0/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl " style="color: #c70039;"></i></a>
+   <a href="https://github.com/loisaleghe" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #c70039;"></i></a>
+ </section>
 
   {% endblock %}

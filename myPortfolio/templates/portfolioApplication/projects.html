@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 {% extends "portfolioApplication/base.html" %}
+{% load static %}
   {% block body_block %}
-    <h2>Hi, welcome </h2>
+  <section>
+    <h1>Projects.</h1>
+    <div class="" style="text-align:center; margin-left:15vw; width:70vw">
+      <h2>Vocabulary Builder</h2>
+      <h3><button type="button" name="button" class="button-details btn-details" tabindex="0">
+          <span>FOR MORE INFORMATION</span>
+        </button></h3>
+      <span>
+        <img src="{% static "/jpegs/vocabulary.jpeg" %}" alt="">
+      </span>
+    </div>
+  </section>
   {% endblock %}

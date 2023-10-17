@@ -34,12 +34,19 @@ body{
 	transition:.5s;
 }
 .timeline ul li span{
-	display:inline-block;
-	background-color:rgb(199, 0, 57);
-	border-radius:25px;
-	padding:2px 5px;
-	font-size:15px;
+	padding:12px 5px;
 	text-align:center;
+}
+.timeline-outline {
+	clip-path: polygon(0 0,95% 0,100% 50%,95% 100%,0 100%);
+	position: absolute;
+	left: -18em;
+	top: 6px;
+	padding: 1px;
+	height: 52px;
+	box-sizing: border-box;
+	background-color:rgb(199, 0, 57);
+	width:70%;
 }
 .timeline ul li .content h3{
 	color:black;
@@ -70,6 +77,11 @@ body{
 	left:-11px;
 	top:28px;
 	transition:.5s;
+}
+section{
+	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
 }
 /* .timeline ul li:hover{
 	transform: scale(1.5);
