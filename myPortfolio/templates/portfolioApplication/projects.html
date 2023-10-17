@@ -4,14 +4,72 @@
   {% block body_block %}
   <section>
     <h1>Projects.</h1>
-    <div class="" style="text-align:center; margin-left:15vw; width:70vw">
+    <div class="project">
       <h2>Vocabulary Builder</h2>
-      <h3><button type="button" name="button" class="button-details btn-details" tabindex="0">
+      <button type="button" class="button-details showOverlayButton" data-target="overlay1">
           <span>FOR MORE INFORMATION</span>
-        </button></h3>
+      </button>
+      <div class="overlay-container" id ="overlay1">
+        <div class="card overlay" >
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Motivation</h3>
+              <p class="card-text" style="font-size: 17px;">To create an app that would allow a user to enter a word, find its
+              definition, identify synonyms and antonyms for the word, and show
+             related words in a bubble diagram.
+             <br>
+             The purpose of this project is to help improve an individual's vocabulary
+             by providing various definitions of an inserted word along side at most
+             ten synonyms for better understanding.</p>
+             <h3 class="card-title">Tech Stack</h3>
+             <p class="card-text" style="font-size: 17px;">JavaScript, HTML, CSS, React, Meriam Webster Thesaurus API,
+               Meriam Webster Dictionary API, Datamuse API</p>
+               <br> <br>
+               <h6 class="card-title">Click link below to see Github</h6>
+               <a href="https://github.com/loisaleghe/project1" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: black;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <span>
         <img src="{% static "/jpegs/vocabulary.jpeg" %}" alt="">
       </span>
     </div>
+
+    <div class="project">
+      <h2>DigiScroll</h2>
+      <button type="button" class="button-details showOverlayButton" data-target="overlay2">
+          <span>FOR MORE INFORMATION</span>
+      </button>
+      <div class="overlay-container" id ="overlay2">
+        <div class="card overlay">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Motivation</h3>
+              <p class="card-text" style="font-size: 17px;">To create an app that
+                would allow a user to stay organized and on top of planned
+                activities.
+             <br>
+             The purpose of this project is to help individiuals store notes in a
+             safe place where they don't have to worry about the data being lost
+             as long as they remember their username and password. Aside from
+             creating a place to store information, another important reason for
+             this project is for user's authentication.</p>
+             <h3 class="card-title">Tech Stack</h3>
+             <p class="card-text" style="font-size: 17px;">JavaScript, HTML, CSS, React </p>
+               <br> <br>
+               <h6 class="card-title">Click link below to see Github</h6>
+               <a href="https://github.com/loisaleghe/DigiScrolls" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: black;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span>
+        <img src="{% static "/jpegs/scroll.jpeg" %}" alt="">
+      </span>
+    </div>
+
   </section>
   {% endblock %}
