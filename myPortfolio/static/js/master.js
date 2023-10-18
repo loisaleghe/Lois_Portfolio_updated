@@ -23,3 +23,38 @@ showOverlayButtons.forEach(button => {
         document.body.classList.remove("overlay-open");
       });
     });
+
+    // Function to generate random numbers within a range
+    function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    // Create and animate particles
+    function createParticles() {
+        const container = document.getElementById("particle-container");
+        const numParticles = 100;
+
+        for (let i = 0; i < numParticles; i++) {
+            const particle = document.createElement("div");
+            particle.className = "particle";
+
+            // Randomly position and size each particle
+            particle.style.left = getRandom(0, 100) + "%";
+            particle.style.bottom = getRandom(0, 100) + "%";
+            const size = getRandom(4, 10);
+            particle.style.width = size + "px";
+            particle.style.height = size + "px";
+
+            // Randomize animation duration and delay
+            const animationDuration = getRandom(4, 8) + "s";
+            const animationDelay = getRandom(0, 4) + "s";
+
+            // Apply animation styles
+            particle.style.animation = `float ${animationDuration} linear ${animationDelay} infinite`;
+
+            container.appendChild(particle);
+        }
+    }
+
+    // Call the createParticles function to start the animation
+    createParticles();
