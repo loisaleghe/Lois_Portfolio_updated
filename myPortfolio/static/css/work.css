@@ -20,7 +20,7 @@ body{
   padding-bottom:30px;
   padding-left: 400px;
 	box-shadow:none;
-  animation: fadeIn 5s;
+  animation: fadeIn 3s;
 }
 .timeline ul{
 	list-style-type:none;
@@ -90,6 +90,35 @@ section{
 	background-color:#0F0;
 	box-shadow:0px 0px 10px 2px #0F0;
 } */
+@media(max-width:420px){
+	.timeline{
+		width:100%;
+		padding:30px 0px 30px 10px;
+		margin-left: 0px;
+	}
+	.timeline ul li .content h3{
+		color:black;
+		font-size:15px;
+		margin-top: 40px;
+	}
+	.timeline ul li:before{
+		left:-22px;
+	}
+	.timeline ul li .content{
+		text-align: left;
+	}
+	.timeline-outline {
+		display:inline-block;
+	background-color:rgb(199, 0, 57);
+	padding:2px 5px;
+	font-size:15px;
+	text-align:center;
+	left: 0;
+	height: 45px;
+	}
+
+}
+
 @media (max-width:300px){
 	.timeline{
 		width:100%;

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {% extends "portfolioApplication/base.html" %}
   {% block body_block %}
-  <section>
+  <div style="margin-top: 50px;" class="intro">
+  <div>
     <div class="me">
       <h1>Who Am I</h1>
     </div>
@@ -11,9 +12,6 @@
     </div>
     <h3 style="text-align:center;margin-top: 10px; font-size:30px;"> I am a </h3>
       <div class="roleNames"><span id="role"></span></div>
-      <!-- <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-      </svg>-->
     <script>
    var typed = new Typed('#role', {
      strings: [
@@ -27,19 +25,13 @@
      loop: true
    });
    </script>
-  </section>
- <section style="text-align:center;">
-   <br><br>
+ </div>
+ <div style="text-align:center; margin-top: 50px;">
    <h3 style="font-size:30px;">Get to know</h3>
    <br>
    <a href="https://www.linkedin.com/in/lois-aleghe-2b754b1a0/" target="_blank"><i class="fa-brands fa-linkedin fa-3x " style="color: #c70039;"></i></a>
    <a href="https://github.com/loisaleghe" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: #c70039;"></i></a>
- </section>
- <section>
    <div id="particle-container"></div>
-    <!-- <img src="https://static.wixstatic.com/media/58d9d0_70b5805c55a749279ed92a804f1f94ba~mv2.gif" alt="" width="180" height="151" style="width:180px;height:151px;object-fit:cover">
-    <img src="https://static.wixstatic.com/media/58d9d0_70b5805c55a749279ed92a804f1f94ba~mv2.gif" alt="" width="180" height="151" style="width:180px;height:151px;margin-left: auto;margin-right: auto;display: block;">
-    <img src="https://static.wixstatic.com/media/58d9d0_70b5805c55a749279ed92a804f1f94ba~mv2.gif" alt="" width="180" height="151" style="width:180px;height:151px;float: right;"> -->
-
- </section>
+ </div>
+ </div>
   {% endblock %}
