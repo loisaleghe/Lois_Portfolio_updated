@@ -136,6 +136,9 @@ div h2{
   border-radius: 5px;
   z-index: 2;
 }
+.card-text{
+  font-size: 13px;
+}
 body.overlay-open {
     overflow: hidden;
   }
@@ -204,6 +207,7 @@ body.overlay-open {
     left: auto;
     transform: none;
     margin: 0px;
+    overflow-y: scroll;
   }
 }
 
