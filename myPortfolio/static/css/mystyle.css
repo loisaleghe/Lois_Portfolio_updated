@@ -174,7 +174,7 @@ body.overlay-open {
   100% { opacity: 1; }
 }
 
-@media(max-width:420px){
+@media(max-width:450px){
   .navbar ul {
     display: flex;
     flex-direction: row;
