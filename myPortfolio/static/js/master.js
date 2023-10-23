@@ -24,10 +24,10 @@ showOverlayButtons.forEach(button => {
       });
     });
 
-    // Function to generate random numbers within a range
-    function getRandom(min, max) {
-        return Math.random() * (max - min) + min;
-    }
+// Function to generate random numbers within a range
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
 // Create and animate particles
 function createParticles() {
