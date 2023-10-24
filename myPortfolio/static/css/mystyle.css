@@ -139,31 +139,12 @@ div h2{
 .card-text{
   font-size: 13px;
 }
+.close-button{
+  display: none;
+}
 body.overlay-open {
     overflow: hidden;
   }
-/* Styling for the close button */
-.close-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: white; /* White text color */
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50%; /* Make it a circle */
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 1000;
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-/* Hover effect for the close button */
-.close-button:hover {
-  background-color: rgb(199, 0, 57); /* Lighter red background on hover */
-}
 
 
 
@@ -232,6 +213,31 @@ body.overlay-open {
     margin: 0px;
     overflow-y: scroll;
   }
+
+  /* Styling for the close button */
+  .close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white; /* White text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%; /* Make it a circle */
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: block;
+  }
+
+  /* Hover effect for the close button */
+  .close-button:hover {
+    background-color: rgb(199, 0, 57); /* Lighter red background on hover */
+  }
+
 }
 
 @media(max-width:450px){
