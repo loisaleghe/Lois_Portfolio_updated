@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-#o$f$$(+7q4yoa=q4#tglz)o(elghdz-%k3+0btir-j0$%8n6*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.117.129.159']
+ALLOWED_HOSTS = ['18.117.129.159', '127.0.0.1']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolioApplication',
     'fontawesomefree',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,17 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# AWS configuration
+
+AWS_ACCESS_KEY_ID = 'AKIA5FTZDHFC3D426DXV'
+AWS_SECRET_ACCESS_KEY = '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'
+
+# Basic Storage configuration for Amazon S3 (Irrespective of Django version)
+
+AWS_STORAGE_BUCKET_NAME = 'lois-portfolio-bucket' # - Enter your s3 bucket name HERE
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_FILE_OVERWRITE = False
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
