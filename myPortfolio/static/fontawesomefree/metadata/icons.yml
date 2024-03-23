@@ -2431,11 +2431,6 @@ award:
     - solid
   unicode: f559
   voted: true
-aws:
-  changes:
-    - 5.0.0
-    - 5.1.0
-  label: Amazon Web Services (AWS)
   search:
     terms: []
   styles:

@@ -3042,18 +3042,6 @@ award:
       - trophy
   unicode: f559
   voted: true
-aws:
-  changes:
-    - 5.0.0
-    - 5.1.0
-  familyStylesByLicense:
-    free:
-      - family: classic
-        style: brands
-    pro:
-      - family: classic
-        style: brands
-  label: Amazon Web Services (AWS)
   search:
     terms: []
   unicode: f375

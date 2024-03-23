@@ -134,16 +134,5 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AWS configuration
 
-# AWS_ACCESS_KEY_ID = ''
-# AWS_SECRET_ACCESS_KEY = ''
 
-# Basic Storage configuration for Amazon S3 (Irrespective of Django version)
-
-# AWS_STORAGE_BUCKET_NAME = '' # - Enter your s3 bucket name HERE
-# AWS_S3_CUSTOM_DOMAIN = ''
-# AWS_S3_FILE_OVERWRITE = False
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
