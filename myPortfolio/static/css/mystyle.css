@@ -1,84 +1,84 @@
 ul.navbar-nav {
-font-size: 17px;
+  font-size: 17px;
 }
-.navbar-nav a:hover{
+.navbar-nav a:hover {
   color: rgb(199, 0, 57) !important;
 }
-nav ul{
- list-style-type: none;
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.contact-button a{
+.contact-button a {
   text-decoration: none;
 }
-.button-details:focus{
+.button-details:focus {
   outline-color: inherit;
 }
-a .contact-btn:focus{
+a .contact-btn:focus {
   outline-color: inherit;
 }
-.workTimeBtn{
+.workTimeBtn {
   color: inherit;
 }
 
-h1{
+h1 {
   margin-top: 20px;
   text-align: left;
   font-weight: bold;
 }
-body{
-  font-family: 'PT Sans',monospace;
+body {
+  font-family: "PT Sans", monospace;
   z-index: 1;
   animation: fadeIn 3s;
 }
-.hiClass{
+.hiClass {
   text-align: left;
   margin-left: 30%;
   font-size: 30px;
   white-space: nowrap;
 }
 
-.highlight{
+.highlight {
   color: rgb(199, 0, 57);
   display: inline-block;
   padding: 0px 0px !important;
 }
-.roleNames{
+.roleNames {
   font-size: 50px;
   text-align: center;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
 }
-#role{
+#role {
   color: rgb(199, 0, 57);
 }
 .typed-cursor {
   color: rgb(199, 0, 57);
 }
 
-.fa-brands{
+.fa-brands {
   margin-left: 5px;
 }
-section{
+section {
   margin-top: 50px;
 }
-.me{
+.me {
   font-size: 35px;
   text-align: left;
   margin-left: 5%;
 }
-div img{
+div img {
   width: 800px;
 }
-div h2{
+div h2 {
   margin-top: 2em;
   font-weight: bold;
   color: rgb(199, 0, 57);
 }
-.project{
-  text-align:center;
+.project {
+  text-align: center;
 }
-.button-details{
+.button-details {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -89,9 +89,9 @@ div h2{
   border-color: rgb(199, 0, 57);
   background-color: inherit;
   font-size: 16px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
 }
-.contact-btn{
+.contact-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -102,7 +102,7 @@ div h2{
   border-color: rgb(199, 0, 57);
   background-color: inherit;
   font-size: 16px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: rgb(199, 0, 57);
 }
 .overlay-container {
@@ -115,18 +115,18 @@ div h2{
   z-index: 999;
   overflow: auto;
 }
-.overlay{
+.overlay {
   position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: left;
-    z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  z-index: 1;
 }
 
-.card{
+.card {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,52 +136,54 @@ div h2{
   border-radius: 5px;
   z-index: 2;
 }
-.card-text{
+.card-text {
   font-size: 13px;
 }
-.close-button{
+.close-button {
   display: none;
 }
 body.overlay-open {
-    overflow: hidden;
-  }
-
-
+  overflow: hidden;
+}
 
 /* Apply styles to the particle container */
 #particle-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    z-index: -1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
 }
 
 .particle {
-    position: absolute;
-    background-color: rgb(199, 0, 57);
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    opacity: 0.7;
+  position: absolute;
+  background-color: rgb(199, 0, 57);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
 }
 
 /* Create a simple float animation */
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -237,60 +239,59 @@ body.overlay-open {
   .close-button:hover {
     background-color: rgb(199, 0, 57); /* Lighter red background on hover */
   }
-
 }
 
-@media(max-width:450px){
+@media (max-width: 450px) {
   .navbar ul {
     display: flex;
     flex-direction: row;
-   }
+  }
 
-   ul li {
+  ul li {
     margin: 10px;
     text-align: center;
-   }
-   .roleNames{
-     font-size: 40px;
-   }
-   .aboutInfo p{
-     font-size: 18px !important;
-   }
+  }
+  .roleNames {
+    font-size: 40px;
+  }
+  .aboutInfo p {
+    font-size: 18px !important;
+  }
 
-   img{
-     max-width: 50%;
-     max-height: 50%
-   }
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
 
-   .button-details{
-     width: 18em;
-     padding: 12px 32px;
-     font-size: 12px;
-   }
-   .project h2{
-     font-size:20px;
-   }
+  .button-details {
+    width: 18em;
+    padding: 12px 32px;
+    font-size: 12px;
+  }
+  .project h2 {
+    font-size: 20px;
+  }
 }
-.contact h3{
+.contact h3 {
   display: block;
   font-size: 1.17em;
   margin-block-start: 1em;
-  margin-block-end:1em;
+  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
   text-align: center;
 }
 
-@media(max-width:320px){
+@media (max-width: 320px) {
   .navbar ul {
     display: flex;
     flex-direction: row;
-   }
+  }
 
-   ul li {
+  ul li {
     margin: 5px;
     font-size: 12px;
     text-align: center;
-   }
+  }
 }
