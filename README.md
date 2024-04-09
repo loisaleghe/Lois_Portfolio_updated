@@ -8,3 +8,5 @@ To run project locally:
 - When css on work page isn't working do a hard refresh so CMD+R
 
 To create package.json: run `npm init`
+
+deploying on vercel
