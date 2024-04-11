@@ -36,7 +36,7 @@ SECRET_KEY = (
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".vercel.app"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".vercel.app", ".now.sh"]
 
 
 # Application definition
@@ -89,7 +89,16 @@ WSGI_APPLICATION = "myPortfolio.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {}
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "ygRdexoKdjDdTgiSzSkzJvvEZRqWHwrf",
+        "HOST":"monorail.proxy.rlwy.net",
+        "PORT":"46166"
+    }
+}
 
 
 # Password validation
@@ -131,7 +140,7 @@ USE_TZ = True
 #     STATIC_DIR,
 # ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
-STATIC_URL = "/static/"
+STATIC_URL = "static/"
 STATICFILES_DIRS = [STATIC_DIR]
 
 
